@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SeleniumAutomationSuite">
+    <listeners>
+        <listener class-name="your.package.name.listeners.TestListener" />
+    </listeners>
+
+    <test name="LoginTest">
+        <classes>
+            <class name="your.package.name.tests.LoginTest">
+                <methods>
+                    <include name="testLogin" />
+                </methods>
+            </class>
+        </classes>
+        <parameter name="browser" value="chrome" />
+    </test>
+
+    <!-- Add more <test> elements for other test classes if needed -->
+
+</suite>
