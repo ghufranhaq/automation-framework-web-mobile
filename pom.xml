@@ -13,6 +13,7 @@
         <maven.compiler.target>19</maven.compiler.target>
         <selenium.version>4.10.0</selenium.version>
         <poi.version>5.0.0</poi.version>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
@@ -26,6 +27,11 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
             <version>${poi.version}</version>
         </dependency>
         <dependency>
