@@ -17,16 +17,14 @@ public class BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public void waitForVisbibility(WebElement webElement){
+    public void waitForVisibility(WebElement webElement){
         Duration timeout = Duration.ofSeconds(DataConfig.WAIT_DEFAULT_TIMEOUT);
         WebDriverWait driverWait = new WebDriverWait(driver, timeout);
         driverWait.until(ExpectedConditions.visibilityOf(webElement));
     }
 
     public void click(WebElement webElement){
-        waitForVisbibility(webElement);
+        waitForVisibility(webElement);
         webElement.click();
     }
-
-    //public void click(WebElement webElement)
 }
